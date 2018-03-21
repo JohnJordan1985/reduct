@@ -22,7 +22,7 @@
   <body class="h-100">
   	<!-- Set height of body to  -->
 
-    <nav class="navbar navbar-light fixed-top py-0">
+    <nav class="navbar navbar-light fixed-top py-0 bg-white">
         <!-- 'py-0' removes top and bottom padding, allowing black background of underlaid body column to be revealed when 'bg-none' is applied to the subsequent container div. At present, it is bg-white that is applied. -->
     	<div class="container bg-white">
     		<!-- As per docs: When the container is within your navbar, its horizontal padding is removed at breakpoints lower than your specified .navbar-expand{-sm|-md|-lg|-xl} class. This ensures we’re not doubling up on padding unnecessarily on lower viewports when your navbar is collapsed. -->
@@ -36,12 +36,14 @@
     </nav>
     <main role="main" class="container h-100">
     	<div class="row h-100">
+            <div class="d-md-none col-sm-12 small-spacer">
+            </div>
     		<!--  Start of First CONTENT column -->
-    		<div class="col-sm-10 col-md-7 pt-5 mt-5">
+    		<div class="col-sm-12 col-md-7 first-column">
                 <!-- Start of wrapper row and col to constrain text width -->
                 <div class="row">
-                    <div class="col-sm-12 col-md-10">
-                        <h1 class="align-self-end mt-5">Design. Test. Build.</h1>
+                    <div class="col-sm-10 col-md-10">
+                        <h1 class="align-self-end">Design. Test. Build.</h1>
                         <p class="lead">Reduct is a team of digital designers and developers, based in the United Kingdom.</p>
                         <p class="lead">We&#8217;re committed to building digital products that reduce complexity and solve interesting problems.</p>
                         <p class="lead">Our website is a work in progress and we will be building it up over the coming weeks.</p>
