@@ -1,0 +1,197 @@
+/* ===============
+GLOBAL SETTINGS
+=============== */
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('fonts/sourcesanspro-regular-webfont.woff2') format('woff2'),
+         url('fonts/sourcesanspro-regular-webfont.woff') format('woff');
+    /*font-weight: normal;
+    font-style: normal;*/
+}
+
+
+@font-face {
+    font-family: 'Rokkit';
+    src: url('fonts/rokkitt-extrabold-webfont.woff2') format('woff2'),
+         url('fonts/rokkitt-extrabold-webfont.woff') format('woff');
+    /*font-weight: normal;
+    font-style: normal;*/
+
+}
+/** { border: solid 1px gray;}*/
+
+
+/* ===============
+PRIMARY SETTINGS
+=============== */
+/* body, primary divs etc. */
+
+html {
+  /* For sticky footer styles */
+  position: relative;
+  min-height: 100% !important;
+  height: 100%;
+}
+
+body {
+  	/* Margin bottom by footer height */
+  	/*margin-bottom: 60px;	*/
+  	min-height: 100%;
+
+}
+
+.navbar {
+	/*Use of RGBA colour to employ opacity on drop shadow*/
+	box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.16);
+
+}
+
+.navbar.navbar-light.fixed-top.py-0 {
+	/*background-color: red;*/
+}
+
+
+main {
+	/*padding-top: 3rem;*/
+	/* To compensate for fixed header */
+}
+
+
+.bg-white {
+	/* Adds background color of white to navbar, which has no default color */
+	background-color: white;
+}
+
+.bg-black {
+	background-color: black;
+}
+
+.cut-border {
+	/*border-left: solid 15rem white;
+	border-bottom: solid 12rem transparent;*/
+}
+
+@supports (-webkit-clip-path: polygon(91% 0, 100% 68%, 95% 100%, 56% 100%, 70% 68%, 61% 0)) or (clip-path: polygon(91% 0, 100% 68%, 95% 100%, 56% 100%, 70% 68%, 61% 0)) {
+	.cut-border {
+		-webkit-clip-path: polygon(100% 0, 100% 100%, 0% 100%, 28% 75%, 0% 0%);
+		clip-path: polygon(100% 0, 100% 100%, 0% 100%, 28% 75%, 0% 0%);
+	}
+}
+/*
+	No padding on body, as was want navbar to cut off coloured background
+*/
+
+
+/* ===============
+SECONDARY SETTINGS
+=============== */
+/* header, footer, sidebar etc.*/
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+
+footer {
+  /*position: absolute;*/
+  /*bottom: 0;*/
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  /*height: 60px;*/
+  /*line-height: 60px;  Vertically center the text there */
+  /*background-color: black;*/
+}
+
+@supports (-webkit-clip-path: polygon(12% 28%, 100% 0, 100% 100%, 0 100%, 0 0)) or (clip-path: polygon(12% 28%, 100% 0, 100% 100%, 0 100%, 0 0)) {
+	footer.cut-border {
+		-webkit-clip-path: polygon(12% 28%, 100% 0, 100% 100%, 0 100%, 0 0);
+		clip-path: polygon(12% 28%, 100% 0, 100% 100%, 0 100%, 0 0);
+	}
+}
+
+
+/* ===============
+TEXT STYLES
+=============== */
+/* headings, paragraphs, lists etc. */
+
+
+h1{
+	font-family: 'Rokkitt', serif;
+	margin-bottom: 1em;
+}
+
+p {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+a:hover, a:visited, a:link, a:active
+{
+	/*The anchor tag (link) also has pseudo-classes such as visited, hover, link and active. Make sure your style is applied to the state(s) in question and that no other styles are conflicting.*/
+    text-decoration: none !important;
+}
+
+/* ===============
+IMAGE & LINK STYLES
+=============== */
+
+.social-icons {
+	color: white;
+	font-size: 3em;
+	text-decoration: none;
+}
+
+
+/* ===============
+GENERAL STYLES
+=============== */
+/* forms, tables, buttons */
+
+form {
+	/*padding-top: 2em;*/
+	flex-grow: 2;
+}
+
+/* ===============
+MISC
+=============== */
+
+.left-red-rect {
+	/* FOr aesthethic purposes*/
+	margin-top: 2em;
+	border-left: solid 15px #EF0606;
+	/*To align red rectangle with text above it*/
+	/*margin-left: 20px;*/
+	/* 5px added to account for padding at top of this class*/
+	height: 10rem;
+	/*position: relative;*/
+	/*padding-bottom: 0px;*/
+}
+
+input.rect-next {
+	margin-left: 15px;
+	margin-bottom: 15px;
+	/*margin-top: 5px;*/
+	border: none;
+	border-bottom: solid 3px black;
+	/* reduct dark gray */
+	color: #4c4c4c;
+	/*width: 250px;*/
+	height: 3rem;
+	font-size: 1.2em;
+}
+
+.btn-submit {
+	/* To match height of input elements*/
+	height: 3em;
+	margin-top: 15px;
+	margin-left: 15px;
+	border: solid 1px #0C68A2;
+	background-color: #000000;
+	color: white;
+	border-radius: 0px;
+	/*margin-top: 15px;*/
+	box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.16);
+	font-size: 1.2em;
+	font-weight: bold;
+}
