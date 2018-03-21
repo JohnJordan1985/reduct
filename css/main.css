@@ -242,6 +242,7 @@ input.rect-next {
 	/*padding: none;*/
 	background-color: black;
 	margin-top: 4em;
+	min-height: 3em;
 }
 
 @supports (-webkit-clip-path: polygon(100% 0, 100% 100%, 73% 32%, 0 100%, 0 0)) or (clip-path: polygon(100% 0, 100% 100%, 73% 32%, 0 100%, 0 0)){
