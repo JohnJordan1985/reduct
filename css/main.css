@@ -19,7 +19,7 @@ GLOBAL SETTINGS
     font-style: normal;*/
 
 }
-* { border: solid 1px gray;}
+/** { border: solid 1px gray;}*/
 
 
 /* ===============
@@ -109,6 +109,16 @@ footer {
 	}
 }
 
+@media screen and (max-width: 420px){
+	/* Social media icons are getting clipped on narrower screens, need to make clipping path less "deep" */
+	@supports (-webkit-clip-path: polygon(12% 14%, 100% 0, 100% 100%, 0 100%, 0 0)) or (clip-path: polygon(12% 14%, 100% 0, 100% 100%, 0 100%, 0 0)) {
+		footer.cut-border {
+			-webkit-clip-path: polygon(12% 14%, 100% 0, 100% 100%, 0 100%, 0 0);
+			clip-path: polygon(12% 14%, 100% 0, 100% 100%, 0 100%, 0 0);
+		}
+	}
+}
+
 
 /* ===============
 TEXT STYLES
@@ -129,6 +139,11 @@ a:hover, a:visited, a:link, a:active
 {
 	/*The anchor tag (link) also has pseudo-classes such as visited, hover, link and active. Make sure your style is applied to the state(s) in question and that no other styles are conflicting.*/
     text-decoration: none !important;
+}
+
+address > p {
+	/*different font color for p text in the address element */
+	color: #adadad;
 }
 
 /* ===============
