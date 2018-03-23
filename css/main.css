@@ -30,8 +30,9 @@ PRIMARY SETTINGS
 html {
   /* For sticky footer styles */
   position: relative;
-  min-height: 100% !important;
   height: 100%;
+  /* Prevents broken layout when screen is wide and of low height (unlikely configuration)*/
+  min-height: 600px !important;
 }
 
 body {
@@ -154,11 +155,13 @@ TEXT STYLES
 
 h1{
 	font-family: 'Rokkitt', serif;
+	color: black;
 	margin-bottom: 1em;
 }
 
 p {
 	font-family: 'Source Sans Pro', sans-serif;
+	color: black;
 }
 
 a:hover, a:visited, a:link, a:active
