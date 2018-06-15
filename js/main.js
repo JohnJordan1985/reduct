@@ -9,8 +9,8 @@ var getYear = function () {
 	var date = new Date();
 	// Get current year from the Date object using inbuilt methods
 	var year = date.getFullYear();
-	// Grab relevant DOM object using native methods and change text content of spanElement by passing in year variable, using innerHTML method. This method has greater cross browser support
-	document.getElementById('year').innerHTML = year;
+	// Grab relevant DOM objects using jQuery and class name (since relevant span appears twice) and update
+	$(".year").text(year);
 }
 // Call function
 getYear();

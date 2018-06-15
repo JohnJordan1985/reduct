@@ -6,17 +6,17 @@ GLOBAL SETTINGS
     font-family: 'Source Sans Pro';
     src: url('fonts/sourcesanspro-regular-webfont.woff2') format('woff2'),
          url('fonts/sourcesanspro-regular-webfont.woff') format('woff');
-    /*font-weight: normal;
-    font-style: normal;*/
+    font-weight: normal;
+    font-style: normal;
 }
 
 
 @font-face {
     font-family: 'Rokkit';
-    src: url('fonts/rokkitt-extrabold-webfont.woff2') format('woff2'),
-         url('fonts/rokkitt-extrabold-webfont.woff') format('woff');
-    /*font-weight: normal;
-    font-style: normal;*/
+    src: url('fonts/rokkitt-bold-webfont.woff2') format('woff2'),
+         url('fonts/rokkitt-bold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
 
 }
 /** { border: solid 1px gray;}*/
@@ -29,18 +29,24 @@ PRIMARY SETTINGS
 
 html {
   /* For sticky footer styles */
-  position: relative;
+  /*position: relative;*/
   height: 100%;
-  /* Prevents broken layout when screen is wide and of low height (unlikely configuration)*/
-  min-height: 600px !important;
+  /* Prevents broken layout when screen is wide and of low height (unlikely configuration), as well on Firefox and Chrome */
+  min-height: 50rem !important;
+}
+
+@media screen and (max-width: 1200px) {
+	html {
+		min-height: 60rem !important;
+	}
 }
 
 body {
   	/* Margin bottom by footer height */
   	/*margin-bottom: 60px;	*/
   	min-height: 100%;
-
 }
+
 
 @media screen and (max-width: 420px){
 
@@ -52,17 +58,6 @@ body {
 
 }
 
-.navbar.navbar-light.fixed-top.py-0 {
-	/*background-color: red;*/
-}
-
-
-main {
-	/*padding-top: 3rem;*/
-	/* To compensate for fixed header */
-}
-
-
 .bg-white {
 	/* Adds background color of white to navbar, which has no default color */
 	background-color: white;
@@ -70,11 +65,6 @@ main {
 
 .bg-black {
 	background-color: black;
-}
-
-.cut-border {
-	/*border-left: solid 15rem white;
-	border-bottom: solid 12rem transparent;*/
 }
 
 @supports (-webkit-clip-path: polygon(91% 0, 100% 68%, 95% 100%, 56% 100%, 70% 68%, 61% 0)) or (clip-path: polygon(91% 0, 100% 68%, 95% 100%, 56% 100%, 70% 68%, 61% 0)) {
@@ -95,6 +85,7 @@ SECONDARY SETTINGS
 
 .first-column {
 	margin-top: 10em;
+
 }
 
 @media screen and (max-width: 768px) {
@@ -129,7 +120,7 @@ footer {
   /*background-color: black;*/
 }
 
-@supports (-webkit-clip-path: polygon(12% 28%, 100% 0, 100% 100%, 0 100%, 0 0)) or (clip-path: polygon(12% 28%, 100% 0, 100% 100%, 0 100%, 0 0)) {
+@supports (clip-path: polygon(12% 28%, 100% 0, 100% 100%, 0 100%, 0 0)) {
 	footer.cut-border {
 		-webkit-clip-path: polygon(12% 28%, 100% 0, 100% 100%, 0 100%, 0 0);
 		clip-path: polygon(12% 28%, 100% 0, 100% 100%, 0 100%, 0 0);
@@ -138,7 +129,7 @@ footer {
 
 @media screen and (max-width: 420px){
 	/* Social media icons are getting clipped on narrower screens, need to make clipping path less "deep" */
-	@supports (-webkit-clip-path: polygon(12% 14%, 100% 0, 100% 100%, 0 100%, 0 0)) or (clip-path: polygon(12% 14%, 100% 0, 100% 100%, 0 100%, 0 0)) {
+	@supports (clip-path: polygon(12% 14%, 100% 0, 100% 100%, 0 100%, 0 0)) {
 		footer.cut-border {
 			-webkit-clip-path: polygon(12% 14%, 100% 0, 100% 100%, 0 100%, 0 0);
 			clip-path: polygon(12% 14%, 100% 0, 100% 100%, 0 100%, 0 0);
@@ -155,6 +146,7 @@ TEXT STYLES
 
 h1{
 	font-family: 'Rokkitt', serif;
+	font-weight: 700;
 	color: black;
 	margin-bottom: 1em;
 }
@@ -212,7 +204,7 @@ MISC
 	/*padding-bottom: 0px;*/
 }
 
-input.rect-next {
+.rect-next {
 	margin-left: 15px;
 	margin-bottom: 15px;
 	/*margin-top: 5px;*/
@@ -226,16 +218,16 @@ input.rect-next {
 }
 
 .btn-submit {
-	/* To match height of input elements*/
+	/* To match height of  elements*/
 	height: 3em;
 	margin-top: 15px;
 	margin-left: 15px;
 	border: solid 1px #0C68A2;
 	background-color: #000000;
 	color: white;
-	border-radius: 0px;
+	border-radius: 0;
 	/*margin-top: 15px;*/
-	box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.16);
+	box-shadow: 0 3px 10px 0 rgba(0,0,0,0.16);
 	font-size: 1.2em;
 	font-weight: bold;
 }
@@ -249,7 +241,7 @@ input.rect-next {
 	min-height: 4em;
 }
 
-@supports (-webkit-clip-path: polygon(100% 0, 100% 100%, 73% 32%, 0 100%, 0 0)) or (clip-path: polygon(100% 0, 100% 100%, 73% 32%, 0 100%, 0 0)){
+@supports (clip-path: polygon(100% 0, 100% 100%, 73% 32%, 0 100%, 0 0)){
 	.small-spacer {
 		-webkit-clip-path: polygon(100% 0, 100% 100%, 88% 72%, 0 100%, 0 0);
 		clip-path: polygon(100% 0, 100% 100%, 88% 72%, 0 100%, 0 0);
