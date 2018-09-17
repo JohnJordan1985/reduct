@@ -1,15 +1,23 @@
 <!DOCTYPE html>
-<html lang="en"><head>
+<html lang="en" class="h-100"><head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125910792-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-125910792-2');
+    </script>
     <meta charset="utf-8">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=0.9, shrink-to-fit=no, maximum-scale=1.0, user-scalable=0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../../../favicon.ico">
-
     <title>Reduct Home Page</title>
     <!-- Link to Google web fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Rokkitt:700%7CSource+Sans+Pro" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Rokkit:700|Roboto:300" rel="stylesheet">
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
@@ -19,12 +27,12 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   <style>@media print {#ghostery-purple-box {display:none !important}}</style></head>
 
-  <body class="h-100">
+  <body class="h-100 gradient">
   	<!-- Set height of body to  -->
 
-    <nav class="navbar navbar-light fixed-top py-0 bg-white">
+    <nav class="navbar navbar-light fixed-top py-0 bg-white padding-left">
         <!-- 'py-0' removes top and bottom padding, allowing black background of underlaid body column to be revealed when 'bg-none' is applied to the subsequent container div. At present, it is bg-white that is applied. -->
-    	<div class="container bg-white">
+    	<div class="container-fluid bg-white">
     		<!-- As per docs: When the container is within your navbar, its horizontal padding is removed at breakpoints lower than your specified .navbar-expand{-sm|-md|-lg|-xl} class. This ensures we’re not doubling up on padding unnecessarily on lower viewports when your navbar is collapsed. -->
             <a class="navbar-brand" href="#">
                 <img src="images/reduct-logo-mark.svg" alt="The Reduct logo" class="d-block d-md-none" width="52" height="40" onerror="this.src='images/reduct-logo-mark.png'; this.onerror=''; this.width='77'; this.height='59'">
@@ -36,15 +44,15 @@
     </nav>
     <section role="main" class="container-fluid h-100">
     	<div class="row h-100">
-            <div class="d-md-none col-sm-12 small-spacer mb-5">
+            <div class="d-md-none col-sm-12 small-spacer mb-3">
                 &nbps;
                 <!-- use of non-breaking space character got div to render properly - was just displaying as a line -->
             </div>
     		<!--  Start of First CONTENT column -->
-    		<div class="col-sm-12 offset-md-1 col-md-6 first-column">
+    		<div class="col-sm-12 col-md-7">
                 <!-- Start of wrapper row and col to constrain text width -->
                 <div class="row my-md-5">
-                    <div class="col-sm-10 col-md-10">
+                    <div class="col-12 padding-bigtop padding-left">
                         <h1 class="align-self-end">Design. Test. Build.</h1>
                         <p class="lead">Reduct is a team of digital designers and developers, based in the United Kingdom.</p>
                         <p class="lead">We&#8217;re committed to building digital products that reduce complexity and solve interesting problems.</p>
@@ -122,8 +130,17 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <!-- Optional JavaScript -->
-    <script src="js/main.js"></script>
+    <script>
+    var getYear = function () {
+        // Create new date object
+        var date = new Date();
+        // Get current year from the Date object using inbuilt methods
+        var year = date.getFullYear();
+        // Grab relevant DOM objects using jQuery and class name (since relevant span appears twice) and update
+        $(".year").text(year);
+    }
+    // Call function
+    getYear();</script>
 </body>
 
 </html>
