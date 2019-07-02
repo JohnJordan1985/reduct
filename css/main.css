@@ -159,18 +159,34 @@ TEXT STYLES
 /* headings, paragraphs, lists etc. */
 
 
-h1{
+h1, dl dt {
 	font-family: 'jost_700_boldbold', serif;
 	font-weight: bold;
 	color: black;
+}
+h1 {
 	margin-bottom: 1em;
+	font-size: 3rem;
 }
 
-p {
+.definition-notes {
+	font-style: italic;
+	display: block;
+	font-size: 1rem;
+	margin-bottom: 1rem;
+}
+
+p, dl {
 	font-family: 'jostlight', sans-serif;
 	color: #666666;
 	font-weight: normal !important;
 }
+
+dd.lead {
+	font-size: 1.5rem;
+}
+
+
 
 a, a:hover, a:visited, a:link, a:active {
 	color: white !important;
@@ -290,6 +306,8 @@ MISC
 	height: 100vh;
 	flex:1;
 }
+
+
 
 @supports (clip-path: polygon(100% 0, 100% 100%, 73% 32%, 0 100%, 0 0)){
 	.small-spacer {
