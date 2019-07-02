@@ -3,21 +3,17 @@ GLOBAL SETTINGS
 =============== */
 
 @font-face {
-    font-family: 'jostlight';
+    font-family: 'Jost';
     src: url('fonts/jost-300-light-webfont.woff2') format('woff2'),
          url('fonts/jost-300-light-webfont.woff') format('woff');
     font-weight: normal;
-    font-style: normal;
-
 }
 
 @font-face {
-    font-family: 'jost_700_boldbold';
+    font-family: 'Jost';
     src: url('fonts/jost-700-bold-webfont.woff2') format('woff2'),
          url('fonts/jost-700-bold-webfont.woff') format('woff');
     font-weight: bold;
-    font-style: normal;
-
 }
 
 
@@ -98,28 +94,7 @@ body {
 */
 
 
-/* ===============
-SECONDARY SETTINGS
-=============== */
-/* header, footer, sidebar etc.*/
 
-@media screen and (max-width: 768px) {
-	.first-column {
-		margin-top: 5em;
-	}
-}
-
-@media screen and (max-width: 768px) and (min-height: 900px) {
-	.first-column {
-		margin-top: 7em;
-	}
-}
-
-@media screen and (max-width: 530px) {
-	.first-column {
-		margin-top: 6em;
-	}
-}
 
 
 /* Sticky footer styles
@@ -160,24 +135,23 @@ TEXT STYLES
 
 
 h1, dl dt {
-	font-family: 'jost_700_boldbold', serif;
-	font-weight: bold;
+	font-weight: 700;
 	color: black;
 }
 h1 {
-	margin-bottom: 1em;
 	font-size: 3rem;
 }
 
 .definition-notes {
 	font-style: italic;
-	display: block;
+	font-weight: 300;
+	color: #666666 ;
 	font-size: 1rem;
 	margin-bottom: 1rem;
 }
 
 p, dl {
-	font-family: 'jostlight', sans-serif;
+	font-family: 'Jost', sans-serif;
 	color: #666666;
 	font-weight: normal !important;
 }
@@ -258,7 +232,6 @@ MISC
 .rect-next {
 	margin-left: 15px;
 	margin-bottom: 15px;
-	/*margin-top: 5px;*/
 	border: none;
 	border-bottom: solid 3px black;
 	/* reduct dark gray */
@@ -284,8 +257,15 @@ MISC
 	font-weight: bold;
 	padding: 10px;
 	box-shadow: 0 3px 10px 0 rgba(0,0,0,0.16);
-  	transition: box-shadow 0.3s cubic-bezier(.25,.8,.25,1), background-color 0.1s ease-out
-	
+  	transition: box-shadow 0.3s cubic-bezier(.25,.8,.25,1), background-color 0.1s ease-out	
+}
+
+.section-break {
+	display: block;
+	height: 5px;
+	width: 50px;
+	background-color: #000000;
+	margin-bottom: 3rem;
 }
 
 .btn-submit:focus, .social-icons:focus {
@@ -321,6 +301,29 @@ MISC
 		margin-top: 1em;
 		height: 6em;
 		min-height: 5em;
+	}
+}
+
+/* ===============
+SECONDARY SETTINGS
+=============== */
+/* header, footer, sidebar etc.*/
+
+@media screen and (max-width: 768px) {
+	.first-column {
+		margin-top: 5em;
+	}
+}
+
+@media screen and (max-width: 768px) and (min-height: 900px) {
+	.first-column {
+		margin-top: 7em;
+	}
+}
+
+@media screen and (max-width: 530px) {
+	.first-column {
+		margin-top: 6em;
 	}
 }
 
