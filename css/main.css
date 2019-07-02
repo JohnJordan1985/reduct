@@ -26,13 +26,24 @@ html, body, section {
   /* For sticky footer styles */
   /*position: relative;*/
   height: 100%;
+
   /* Prevents broken layout when screen is wide and of low height (unlikely configuration), as well on Firefox and Chrome */
   /*min-height: 100vh !important;*/
 }
 
 body {
-	height: auto;
+	min-height: 100%;
+	display: flex;
+	overflow: hidden;
+
 }
+
+footer {
+	height: 325px;
+	flex-grow: 2;
+}
+
+
 
 @media screen and (max-width: 1200px) {
 	html {
