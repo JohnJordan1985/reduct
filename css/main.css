@@ -11,6 +11,30 @@ GLOBAL SETTINGS
 
 @font-face {
     font-family: 'Jost';
+     src: url('fonts/jost-300-lightitalic-webfont.woff2') format('woff2'),
+         url('fonts/jost-300-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Jost';
+    src: url('fonts/jost-500-medium-webfont.woff2') format('woff2'),
+         url('fonts/jost-500-medium-webfont.woff') format('woff');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Jost';
+    src: url('fonts/jost-500-mediumitalic-webfont.woff2') format('woff2'),
+         url('fonts/jost-500-mediumitalic-webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+}
+
+
+@font-face {
+    font-family: 'Jost';
     src: url('fonts/jost-700-bold-webfont.woff2') format('woff2'),
          url('fonts/jost-700-bold-webfont.woff') format('woff');
     font-weight: bold;
@@ -39,8 +63,7 @@ body {
 
 footer {
 	height: 325px;
-	display: inline-flex;
-	flex-grow: 2;
+	
 }
 
 
@@ -144,6 +167,12 @@ TEXT STYLES
 =============== */
 /* headings, paragraphs, lists etc. */
 
+body {
+	font-family: 'Jost', sans-serif;	
+	color: #666666;
+	font-weight: normal;
+}
+
 
 h1, dl dt {
 	font-weight: 700;
@@ -151,6 +180,12 @@ h1, dl dt {
 }
 h1 {
 	font-size: 3rem;
+}
+
+strong {
+	font-weight: 500;
+	color: black;
+	
 }
 
 .definition-notes {
@@ -161,11 +196,6 @@ h1 {
 	margin-bottom: 1rem;
 }
 
-p, dl {
-	font-family: 'Jost', sans-serif;
-	color: #666666;
-	font-weight: normal !important;
-}
 
 dd.lead {
 	font-size: 1.5rem;
