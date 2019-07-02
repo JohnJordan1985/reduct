@@ -34,6 +34,10 @@ html, body, section {
   /*min-height: 100vh !important;*/
 }
 
+body {
+	height: auto;
+}
+
 @media screen and (max-width: 1200px) {
 	html {
 		min-height: 60rem !important;
@@ -280,6 +284,11 @@ MISC
 	margin-top: 2em;
 	height: 6em;
 	min-height: 4em;
+}
+
+.full-height {
+	height: 100vh;
+	flex:1;
 }
 
 @supports (clip-path: polygon(100% 0, 100% 100%, 73% 32%, 0 100%, 0 0)){
