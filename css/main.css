@@ -61,10 +61,6 @@ body {
 
 }
 
-footer {
-	height: 325px;
-	
-}
 
 
 .padding-bigtop {
@@ -298,9 +294,7 @@ SECONDARY SETTINGS
 /* header, footer, sidebar etc.*/
 
 @media screen and (min-width: 768px) {
-	body {
-		overflow: hidden;
-	}
+	
 
 	.padding-bigtop {
 		padding-top: 7rem;
@@ -321,12 +315,4 @@ SECONDARY SETTINGS
 		padding-left: 5rem;
 	}
 
-}
-
-@media screen and (min-width: 420px){		
-
-	footer {
-		position: absolute;
-		bottom: 0;
-	}
 }
