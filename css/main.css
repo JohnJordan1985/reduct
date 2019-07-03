@@ -67,36 +67,11 @@ footer {
 }
 
 
-
-@media screen and (max-width: 1200px) {
-	html {
-		min-height: 60rem !important;
-	}
-}
-
-
 .padding-bigtop {
 	padding-top: 5rem;
 }
 
 
-@media screen and (min-width: 768px){
-	/* Apply gradient to cover larger responsive, fluid screens */
-	body.gradient {
-		/* The % indicate the start/stop locations, respectivly.*/
-		background: linear-gradient(to right, white 0%,white 75%, black 75%, black 100%) !important; /* Reference clip path for values */
-	}
-
-	.container-fluid {
-		/*Want to constrain proportion of this class, but retain its properties of full width at smaller screens which I could not achieve without fluid width*/
-		max-width: 1200px;
-	}
-
-	.padding-left {
-		padding-left: 5rem;
-	}
-
-}
 
 .container-fluid {
 	/*Want to constrain proportion of this class, but retain its properties of full width at smaller screens which I could not achieve without fluid width*/
@@ -123,12 +98,6 @@ footer {
 		clip-path: polygon(100% 0, 100% 100%, 0% 100%, 28% 75%, 0% 0%);
 	}
 }
-/*
-	No padding on body, as was want navbar to cut off coloured background
-*/
-
-
-
 
 
 /* Sticky footer styles
@@ -144,22 +113,17 @@ footer {
   /*background-color: black;*/
 }
 
-@supports (clip-path: polygon(12% 28%, 100% 0, 100% 100%, 0 100%, 0 0)) {
+	/* Social media icons are getting clipped on narrower screens, need to make clipping path less "deep" */
+
+@supports (clip-path: polygon(12% 14%, 100% 0, 100% 100%, 0 100%, 0 0)) {
 	footer.cut-border {
-		-webkit-clip-path: polygon(12% 28%, 100% 0, 100% 100%, 0 100%, 0 0);
-		clip-path: polygon(12% 28%, 100% 0, 100% 100%, 0 100%, 0 0);
+		-webkit-clip-path: polygon(12% 14%, 100% 0, 100% 100%, 0 100%, 0 0);
+		clip-path: polygon(12% 14%, 100% 0, 100% 100%, 0 100%, 0 0);
 	}
 }
 
-@media screen and (max-width: 420px){
-	/* Social media icons are getting clipped on narrower screens, need to make clipping path less "deep" */
-	@supports (clip-path: polygon(12% 14%, 100% 0, 100% 100%, 0 100%, 0 0)) {
-		footer.cut-border {
-			-webkit-clip-path: polygon(12% 14%, 100% 0, 100% 100%, 0 100%, 0 0);
-			clip-path: polygon(12% 14%, 100% 0, 100% 100%, 0 100%, 0 0);
-		}
-	}
-}
+
+
 
 
 /* ===============
@@ -328,23 +292,6 @@ MISC
 	flex:1;
 }
 
-
-
-@supports (clip-path: polygon(100% 0, 100% 100%, 73% 32%, 0 100%, 0 0)){
-	.small-spacer {
-		-webkit-clip-path: polygon(100% 0, 100% 100%, 88% 72%, 0 100%, 0 0);
-		clip-path: polygon(100% 0, 100% 100%, 88% 72%, 0 100%, 0 0);
-	}
-}
-
-@media screen and (max-width: 530px) {
-	.small-spacer {
-		margin-top: 1em;
-		height: 6em;
-		min-height: 5em;
-	}
-}
-
 /* ===============
 SECONDARY SETTINGS
 =============== */
@@ -359,9 +306,25 @@ SECONDARY SETTINGS
 		padding-top: 7rem;
 	}
 
+	/* Apply gradient to cover larger responsive, fluid screens */
+	body.gradient {
+		/* The % indicate the start/stop locations, respectivly.*/
+		background: linear-gradient(to right, white 0%,white 75%, black 75%, black 100%) !important; /* Reference clip path for values */
+	}
+
+	.container-fluid {
+		/*Want to constrain proportion of this class, but retain its properties of full width at smaller screens which I could not achieve without fluid width*/
+		max-width: 1200px;
+	}
+
+	.padding-left {
+		padding-left: 5rem;
+	}
+
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 420px){		
+
 	footer {
 		position: absolute;
 		bottom: 0;
