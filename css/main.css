@@ -56,8 +56,10 @@ html, body, section {
 }
 
 body {
-	min-height: 100%;
-	position: relative;
+	
+	display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 
 }
 
@@ -88,11 +90,20 @@ body {
 	background-color: black;
 }
 
+.match-height {
+	min-height: 850px;
+	height: 100%;
+}
+
 @supports (-webkit-clip-path: polygon(91% 0, 100% 68%, 95% 100%, 56% 100%, 70% 68%, 61% 0)) or (clip-path: polygon(91% 0, 100% 68%, 95% 100%, 56% 100%, 70% 68%, 61% 0)) {
 	.cut-border {
 		-webkit-clip-path: polygon(100% 0, 100% 100%, 0% 100%, 28% 75%, 0% 0%);
 		clip-path: polygon(100% 0, 100% 100%, 0% 100%, 28% 75%, 0% 0%);
 	}
+}
+
+main {
+	height: auto;
 }
 
 
@@ -117,9 +128,6 @@ footer {
 		clip-path: polygon(12% 14%, 100% 0, 100% 100%, 0 100%, 0 0);
 	}
 }
-
-
-
 
 
 /* ===============
@@ -293,8 +301,7 @@ SECONDARY SETTINGS
 =============== */
 /* header, footer, sidebar etc.*/
 
-@media screen and (min-width: 768px) {
-	
+@media screen and (min-width: 768px) {	
 
 	.padding-bigtop {
 		padding-top: 7rem;
@@ -303,7 +310,7 @@ SECONDARY SETTINGS
 	/* Apply gradient to cover larger responsive, fluid screens */
 	body.gradient {
 		/* The % indicate the start/stop locations, respectivly.*/
-		background: linear-gradient(to right, white 0%,white 75%, black 75%, black 100%) !important; /* Reference clip path for values */
+		background: linear-gradient(to right, white 0%,white 70%, black 70%, black 100%) !important; /* Reference clip path for values */
 	}
 
 	.container-fluid {
