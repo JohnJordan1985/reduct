@@ -1,226 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125910792-2"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-125910792-2');
-    </script>
-    <meta charset="utf-8">
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
     <meta name="description" content="">
-    <meta name="author" content="">
-    <title>Reduct Home Page</title>
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta name="keywords" content="">
+    <meta name="author" content="John Jordan">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reduct Landing Page</title>
+    <style>
+        @font-face {
+    font-family: 'Jost';
+    src: url('css/fonts/jost-300-light-webfont.woff2') format('woff2'),
+         url('css/fonts/jost-300-light-webfont.woff') format('woff');
+    font-weight: normal;
+}
 
-    <!-- Custom styles for this template -->
-    <link href="css/main.css" rel="stylesheet">
-    <!-- Link to Font Awesome -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-  <style>@media print {#ghostery-purple-box {display:none !important}}</style>
-</head>
+@font-face {
+    font-family: 'Jost';
+     src: url('css/fonts/jost-300-lightitalic-webfont.woff2') format('woff2'),
+         url('css/fonts/jost-300-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+        @font-face {
+    font-family: 'Jost';
+    src: url('css/fonts/jost-700-bold-webfont.woff2') format('woff2'),
+         url('css/fonts/jost-700-bold-webfont.woff') format('woff');
+    font-weight: bold;
+}
+        body {
+            font-family: 'Jost', sans-serif;
+            font-weight: 300;
 
-<body class=" gradient">
-	<!-- Set height of body to  -->
-    <nav class="navbar navbar-light fixed-top py-0 bg-white padding-left">
-        <!-- 'py-0' removes top and bottom padding, allowing black background of underlaid body column to be revealed when 'bg-none' is applied to the subsequent container div. At present, it is bg-white that is applied. -->
-    	<div class="container-fluid bg-white">
-    		<!-- As per docs: When the container is within your navbar, its horizontal padding is removed at breakpoints lower than your specified .navbar-expand{-sm|-md|-lg|-xl} class. This ensures we’re not doubling up on padding unnecessarily on lower viewports when your navbar is collapsed. -->
-            <a class="navbar-brand" href="#">
-                <img src="images/reduct-logo-mark.svg" alt="The Reduct logo" class="d-block d-md-none" width="52" height="40" onerror="this.src='images/reduct-logo-mark.png'; this.onerror=''; this.width='77'; this.height='59'">
-                <img src="images/reduct-logo-horizontal.svg" alt="The Reduct logo" class="d-none d-md-block" width="139" height="40" onerror="this.src='images/reduct-logo-horizontal.png';this.onerror=''; this.width='153'; this.height='60'">
-            </a>
-    		<!-- end of nav bar content -->
-    	</div>
-    	<!-- end of container wrapper div to center nav content on larger screens  -->
-    </nav>
-    <main class="container-fluid">
-        <div class="row d-inline-flex">
-            <section class="col-12 col-md-6 bg-white d-block  padding-left padding-bigtop">
-                <h1 class="padding-bigtop">
-                    <dl>
-                        <dt>reduct <span class="definition-notes">verb (Philosophy)</span></dt>
-                        <dd class="lead">                             
-                            To trace (a thing) back to its origin.
-                        </dd>
-                    </dl>
-                </h1>
-                <span class="section-break"></span>
-                <p class="lead">If &#8220;abstraction&#8221; is the process of going from the things we can directly observe&#8212;the <i>trees</i>&#8212;to the concepts that we can only imagine&#8212;the <i>forest</i>&#8212;then &#8220;reduction&#8221; is the <em>reverse</em> process.</p>
+            line-height: 1.5rem;
 
-                <p class="lead">
-                    To <em>reduct</em> a concept is to trace that concept back, step-by-step, to its originating source in the things that we can directly experience.
-                </p>
-                
-                <p class="lead"> <strong>Our website is a work in progress and we will be building it up over the coming weeks.</strong></p>
-               
-                <!-- <form action="#" onsubmit="return false">
-                    <label for="user_name">Name*</label>
-                    <input type="text" id="user_name" required tabindex="1">
-                    <label for="user_email">Email*</label>
-                    <input type="email" id="user_name" required tabindex="2">
-                    <input type="submit" value="Get in touch" class="btn-submit" tabindex="3">
-                </form> -->
-            </section>
-            <section class="d-none d-md-flex col-md-6 bg-black pl-0 cut-border align-items-end match-height">
-                <div class="d-inline-block full-height">
-                    jjf
-                </div>
-                <div class="text-right d-block pb-4">
-                    <a class="social-icons" href="https://www.facebook.com/Reduct-1049036578572906/?ref=aymt_homepage_panel" target="_blank" tabindex="4">
-                        <span class="fab fa-facebook"></span>
-                    </a>
-                    <a class="social-icons" href="https://twitter.com/Reduct_Ltd" target="_blank" tabindex="5">
-                        <span class="fab fa-twitter-square"></span>
-                    </a>
-                    <a class="social-icons" href="https://www.linkedin.com/company/reduct-ltd/" target="_blank" tabindex="6">
-                        <span class="fab fa-linkedin last"></span>
-                    </a>
-                    <address class=" text-right mt-3">
-                        <p>Contact us at: <a href="mailto:hello@reduct.co.uk" tabindex="7">hello@reduct.co.uk</a></p>
-                        <p>Copyright &#169; <span class="year"></span> Reduct Ltd.</p>
-                        <!-- <p>Registered office: C/O Clever Accounts Ltd Brookfield Court, Selby Road, Leeds, England, LS25 1NB</p> -->
-                        <p>
-                            Company number: <a href="https://beta.companieshouse.gov.uk/company/11151733" target="_blank" tabindex="8">11151733</a>
-                        </p>
-                    </address>
-                </div>                
-            </section>        
-        </div>          
-    </main> 
-    <div class="d-md-none" style=""></div>
-    <footer class="d-md-none bg-black cut-border mt-5">
-        <div class="w-100 pt-1">
-            <div class="col-sm-12 text-right mt-5 pt-5">
-                <a class="social-icons" href="https://www.facebook.com/Reduct-1049036578572906/?ref=aymt_homepage_panel" target="_blank">
-                    <span class="fab fa-facebook"></span>
-                </a>
-                <a class="social-icons" href="https://twitter.com/Reduct_Ltd" target="_blank">
-                    <span class="fab fa-twitter-square"></span>
-                </a>
-                <a class="social-icons" href="https://www.linkedin.com/company/reduct-ltd/" target="_blank">
-                    <span class="fab fa-linkedin last"></span>
-                </a>
-            </div>
-            <address class="col-sm-12 text-right mt-3">
-                <p>Contact us at: <a href="mailto:hello@reduct.co.uk">hello@reduct.co.uk</a></p>
-                <p>Copyright &#169; <span class="year"></span> Reduct Ltd.</p>
-                <!-- <p>Registered office: C/O Clever Accounts Ltd Brookfield Court, Selby Road, Leeds, England, LS25 1NB</p> -->
-                <p>
-                    Company number: <a href="https://beta.companieshouse.gov.uk/company/11151733" target="_blank">11151733</a>
-                </p>
-            </address>
-        </div>
-    </footer>       
-  <section role="main" class="container-fluid d-none">
-        <div class="row h-100">
-            <div class="d-md-none col-sm-12 small-spacer mb-3">
-                &nbps;
-                <!-- use of non-breaking space character got div to render properly - was just displaying as a line -->
-            </div>
-            <!--  Start of First CONTENT column -->
-            <div class="col-sm-12 col-md-7">
-                <!-- Start of wrapper row and col to constrain text width -->
-                <div class="row mt-md-5">
-                    <div class="col-12 padding-bigtop padding-left">
-                        <h1 class="align-self-end">Design. Test. Build.</h1>
-                        <p class="lead">Reduct is a team of digital designers and developers, based in the United Kingdom.</p>
-                        <p class="lead">We&#8217;re committed to building digital products that reduce complexity and solve interesting problems.</p>
-                        <p class="lead">Our website is a work in progress and we will be building it up over the coming weeks.</p>
-                        <p class="lead">In the meantime, please keep an eye on our social media channels to be kept up to date.</p>
-                        <p class="lead">If you&#8217;re interested in working with us, or just want to find out more about what we do, then send an email to the address below. </p>
-                        <p class="lead">We&#8217;ll get back to you as soon as we can.</p>
-                        <form action="#" onsubmit="return false">
-                            <label for="user_name">Name*</label>
-                            <input type="text" id="user_name" required tabindex="1">
-                            <label for="user_email">Email*</label>
-                            <input type="email" id="user_name" required tabindex="2">
-                            <input type="submit" value="Get in touch" class="btn-submit" tabindex="3">
-                        </form>
-                    </div>
-                </div>
-                <!-- End of wrapper row and col to constrain text width -->
-            </div>
-            <!--  End of First CONTENT column -->
-            <!-- start of SECOND column -->
-            <div class="d-none d-md-block col-md-5 h-100 bg-black cut-border" >
-                <!--  Hides content on smaller screens  -->
-                <!-- Start of column content -->
-                <div class="row h-100 justify-content-end align-items-end">
-                    <!-- This wrapper row becomes a flex container and positions content -->
-                    <!-- Start of flex child that holds content -->
-                    <div class="col-12">
-                        <div class="text-right">
-                            <a class="social-icons" href="https://www.facebook.com/Reduct-1049036578572906/?ref=aymt_homepage_panel" target="_blank" tabindex="4">
-                                <span class="fab fa-facebook"></span>
-                            </a>
-                            <a class="social-icons" href="https://twitter.com/Reduct_Ltd" target="_blank" tabindex="5">
-                                <span class="fab fa-twitter-square"></span>
-                            </a>
-                            <a class="social-icons" href="https://www.linkedin.com/company/reduct-ltd/" target="_blank" tabindex="6">
-                                <span class="fab fa-linkedin last"></span>
-                            </a>
-                        </div>
-                        <address class=" text-right mt-3">
-                            <p>Contact us at: <a href="mailto:hello@reduct.co.uk" tabindex="7">hello@reduct.co.uk</a></p>
-                            <p>Copyright &#169; <span class="year"></span> Reduct Ltd.</p>
-                            <!-- <p>Registered office: C/O Clever Accounts Ltd Brookfield Court, Selby Road, Leeds, England, LS25 1NB</p> -->
-                            <p>
-                                Company number: <a href="https://beta.companieshouse.gov.uk/company/11151733" target="_blank" tabindex="8">11151733</a>
-                            </p>
-                        </address>
-                    </div>
-                    <!-- End of flex child that holds content  -->
-                </div>
-                <!-- end of wrapper div, which is a flex container and holds the content -->
-                <!-- end of column content -->
-            </div>
-            <!-- End of SECOND column -->
-            <footer class="col-sm-12 d-md-none bg-black cut-border mt-5">
-                <div class="row pt-1">
-                    <div class="col-sm-12 text-right mt-5 pt-5">
-                        <a class="social-icons" href="https://www.facebook.com/Reduct-1049036578572906/?ref=aymt_homepage_panel" target="_blank">
-                            <span class="fab fa-facebook"></span>
-                        </a>
-                        <a class="social-icons" href="https://twitter.com/Reduct_Ltd" target="_blank">
-                            <span class="fab fa-twitter-square"></span>
-                        </a>
-                        <a class="social-icons" href="https://www.linkedin.com/company/reduct-ltd/" target="_blank">
-                            <span class="fab fa-linkedin last"></span>
-                        </a>
-                    </div>
-                    <address class="col-sm-12 text-right mt-3">
-                        <p>Contact us at: <a href="mailto:hello@reduct.co.uk">hello@reduct.co.uk</a></p>
-                        <p>Copyright &#169; <span class="year"></span> Reduct Ltd.</p>
-                        <!-- <p>Registered office: C/O Clever Accounts Ltd Brookfield Court, Selby Road, Leeds, England, LS25 1NB</p> -->
-                        <p>
-                            Company number: <a href="https://beta.companieshouse.gov.uk/company/11151733" target="_blank">11151733</a>
-                        </p>
-                    </address>
-                </div>
-            </footer>
-        </div> -->
-        <!-- End of first row with class container -->
-
-   </section>  
-    <script>
-        var getYear = function () {
-            // Create new date object
-            var date = new Date();
-            // Get current year from the Date object using inbuilt methods
-            var year = date.getFullYear();
-            // Grab relevant DOM objects using jQuery and class name (since relevant span appears twice) and update
-            $(".year").text(year);
+            color: #666;
         }
-        // Call function
-        getYear();
-    </script>
+
+        p {
+            margin-top: 0;
+            margin-bottom: 1.25rem;
+        }
+
+        .bold {
+            font-weight: 600;
+            color: #000;
+        }
+
+        .sub-heading {
+            font-size: 1.5rem;
+            line-height: 2rem;
+        }
+
+        .lead {
+            font-size: 1.25rem;
+            margin-bottom: 1.75rem;
+        }
+
+        .site-header h1 {
+            font-size: 3rem;
+        }
+
+        .site-header .title-word-definition {
+            font-style: italic;
+            font-weight: 300;
+            font-size: 1rem;
+            color: #666;
+        }
+
+        .site-header::after {
+            display: block;
+            content: '';
+            width: 50px;
+            height: 5px;
+            background-color: #000;
+            margin-bottom: 1.25rem;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header class="site-header">
+            <h1 class="bold">reduct <span class="title-word-definition">verb (Philosophy)</span></h1>
+            <p class="sub-heading">To trace (a thing) back to its origin.</p>
+        </header>
+        <section>
+            <p class="lead">
+                If “abstraction” is the process of going from the things we can directly observe—the <i>trees</i>—to the concepts that we can only imagine—the <i>forest</i>—then “reduction” is the <em>reverse</em> process.
+            </p>
+            <p class="lead">
+                To <em>reduct</em> a concept is to trace that concept back, step-by-step, to its originating source in the things that we can directly experience.
+            </p>
+            <p class="lead bold">
+                Right now, there is nothing here, but someday there might be
+            </p>
+        </section>
+    </main>
 </body>
 </html>
