@@ -8,31 +8,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reduct Landing Page</title>
     <style>
-        @font-face {
-    font-family: 'Jost';
-    src: url('css/fonts/jost-300-light-webfont.woff2') format('woff2'),
-         url('css/fonts/jost-300-light-webfont.woff') format('woff');
-    font-weight: normal;
-}
 
-@font-face {
-    font-family: 'Jost';
-     src: url('css/fonts/jost-300-lightitalic-webfont.woff2') format('woff2'),
-         url('css/fonts/jost-300-lightitalic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: italic;
-}
         @font-face {
-    font-family: 'Jost';
-    src: url('css/fonts/jost-700-bold-webfont.woff2') format('woff2'),
-         url('css/fonts/jost-700-bold-webfont.woff') format('woff');
-    font-weight: bold;
-}
+            font-family: 'Jost';
+            src: url('css/fonts/jost-300-light-webfont.woff2') format('woff2'),
+                 url('css/fonts/jost-300-light-webfont.woff') format('woff');
+            font-weight: normal;
+        }
+                
+
+        @font-face {
+            font-family: 'Jost';
+             src: url('css/fonts/jost-300-lightitalic-webfont.woff2') format('woff2'),
+                 url('css/fonts/jost-300-lightitalic-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: 'Jost';
+            src: url('css/fonts/jost-700-bold-webfont.woff2') format('woff2'),
+                 url('css/fonts/jost-700-bold-webfont.woff') format('woff');
+            font-weight: bold;
+        }
+
         body {
             font-family: 'Jost', sans-serif;
             font-weight: 300;
 
             line-height: 1.5rem;
+
+            padding: 2rem 1rem;
 
             color: #666;
         }
@@ -40,10 +46,11 @@
         p {
             margin-top: 0;
             margin-bottom: 1.25rem;
+            word-spacing: 0.05rem;
         }
 
         .bold {
-            font-weight: 600;
+            font-weight: bold;
             color: #000;
         }
 
@@ -74,7 +81,7 @@
             width: 50px;
             height: 5px;
             background-color: #000;
-            margin-bottom: 1.25rem;
+            margin-bottom: 3rem;
         }
     </style>
 </head>
@@ -92,7 +99,7 @@
                 To <em>reduct</em> a concept is to trace that concept back, step-by-step, to its originating source in the things that we can directly experience.
             </p>
             <p class="lead bold">
-                Right now, there is nothing here, but someday there might be
+                Right now, there is nothing here, but someday there might be&#8230;
             </p>
         </section>
     </main>
