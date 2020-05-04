@@ -1,5 +1,9 @@
-<footer class="footer">
-	<!--#echo var="HTTP_USER_AGENT" -->
+<!--#if expr="%{HTTP_USER_AGENT} =~ /(MSIE|Trident)/" -->
+<footer class="footer fake-footer_clipped-top">
+<img class="img_clipped-top" src="common-content/footer-top.svg"/>
+<!--#else -->
+<footer class="footer footer_clipped-top">
+<!--#endif -->
     <div class="copy-right">
         &copy; Copyright of <a href="https://johnjordan.dev" rel="author">John Jordan</a>.
         <br/> 
