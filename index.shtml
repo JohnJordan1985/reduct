@@ -1,0 +1,10 @@
+<!--#include virtual="common-content/head.html" -->
+
+<meta name="author" content="John Jordan">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<title>Reduct Landing Page</title>
+
+<!--#include virtual="css/normalize-css.html" --> 
+<!--#include virtual="css/base-css.html" --> 
+<!--#include virtual="common-content/body.shtml" -->

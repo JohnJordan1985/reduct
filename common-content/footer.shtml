@@ -1,0 +1,10 @@
+<footer class="footer">
+	<!--#echo var="HTTP_USER_AGENT" -->
+    <div class="copy-right">
+        &copy; Copyright of <a href="https://johnjordan.dev" rel="author">John Jordan</a>.
+        <br/> 
+        All Rights Reserved. 
+        <br/>
+        2018 &ndash; <span id="copy-right-year"><!--#config timefmt="%Y" --> <!--#echo var="DATE_LOCAL" --></span>.
+    </div>
+</footer>

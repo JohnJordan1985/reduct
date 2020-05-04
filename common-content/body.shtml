@@ -1,0 +1,8 @@
+</head>
+<body>
+    <main>
+       <!--#include virtual="../content/home-page.html" -->  
+    </main>
+   <!--#include virtual="../common-content/footer.shtml" --> 
+</body>
+</html>

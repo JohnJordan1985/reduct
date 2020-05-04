@@ -1,0 +1,159 @@
+   
+<style>
+    :root {
+        --base-line-rhythm: 1.5;
+        --base-type-ratio: 1.5;
+    }
+    /* Typographic scale based on rems, and the 'Perfect Fifth', 1, 1.5, 2.25, 3.375 see: https://type-scale.com/. 4 sizes per interval, i.e. 1, 1.125, 1.25, 1.375 */
+    @font-face {
+        font-family: 'Jost';
+        src: url('css/fonts/jost-300-light-webfont.woff2') format('woff2'),
+            url('css/fonts/jost-300-light-webfont.woff') format('woff');
+        font-weight: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: 'Jost';
+        src: url('css/fonts/jost-700-bold-webfont.woff2') format('woff2'),
+            url('css/fonts/jost-700-bold-webfont.woff') format('woff');
+        font-weight: bold;
+        font-display: swap;
+    }
+
+    html {
+        line-height: 1.5; /* 1 rhythm unit */
+        line-height: var(--base-line-rhythm);
+    }
+
+    html, body {
+        height: 100%;
+    }
+
+    body {
+        font-family: 'Jost', sans-serif;
+        font-weight: 300;
+
+        text-align: left;
+
+        display: flex;
+        flex-direction: column;
+
+        padding: 0;
+
+        color: #333;
+    }
+
+    main {
+        max-width: 30rem;
+        flex-grow: 1;
+
+        margin: 0 auto 5.06rem;
+        padding: 2.25rem;
+
+    }
+
+    p {
+        margin-top: 0;
+        margin-bottom: 1.5rem;
+        margin-bottom: calc(var(--base-line-rhythm) * 1rem);
+
+        word-spacing: 0.05rem;
+    }
+
+    a {
+        color: #5574BA;
+    }
+
+    dd {
+        margin-left: 0;
+    }
+
+    .bold {
+        font-weight: bold;
+        color: #000;
+    }
+
+    .sub-heading {
+        font-size: 1.5rem;
+    }
+
+    .lead {
+        font-size: 1.25rem;
+        margin-bottom: 1.5rem;
+        margin-bottom: calc(var(--base-line-rhythm) * 1rem);
+    }
+
+    .site-header--img {
+        max-width: 7.59rem; /* Safari issue */
+        margin-bottom: 1.5rem;
+        margin-bottom: calc(var(--base-line-rhythm) * 1rem);
+    }
+
+    .site-header h1 {
+        font-size: 3.375rem;
+    }
+
+    .site-header--defn {
+        display: block;
+
+        font-weight: 300;
+        font-size: 1rem;
+        color: #666;
+    }
+
+    .site-header::after {
+        display: block;
+        content: '';
+        width: 50px;
+        height: 5px;
+
+        margin-bottom: 2.25rem;
+        margin-bottom: calc(var(--base-line-rhythm) * 1.5rem);
+
+        background-color: #000;
+    }
+
+    .footer {
+        padding: 2.25rem 1rem;
+        background-color: #000;
+        color: #FFF;
+        text-align: right;
+    }
+
+    .footer_clipped-top {
+        padding-top: 7.59rem;
+        -webkit-clip-path: polygon(60% 25%, 100% 0, 100% 100%, 0 100%, 0 0);
+        clip-path: polygon(60% 25%, 100% 0, 100% 100%, 0 100%, 0 0);
+    }
+
+    .fake-footer_clipped-top {
+        margin-top: -1rem;
+        margin-left: -1rem;
+        padding-top: 0;
+    }
+
+    .img_clipped-top {
+        position: relative;
+        top: -1rem;
+    }
+
+    .copy-right {
+        width: 75%;
+        margin-left: auto;
+    }
+
+    /* BS:4 576px, 768px, 992px and 1200px*/
+
+    @media screen and (min-width: 576px) {
+        :root {
+            --base-line-rhythm: 1.375;
+        }
+
+        .site-header--defn {
+            display: inline;
+            margin-top: 0;
+        }
+    }
+
+</style>
