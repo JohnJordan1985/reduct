@@ -1,7 +1,8 @@
    
 <style>
     :root {
-        --base-line-rhythm: 1.5;
+        --base-line-rhythm: 1.25;
+        --base-font-size: 1;
         --base-type-ratio: 1.5;
     }
     /* Typographic scale based on rems, and the 'Perfect Fifth', 1, 1.5, 2.25, 3.375 see: https://type-scale.com/. 4 sizes per interval, i.e. 1, 1.125, 1.25, 1.375 */
@@ -21,11 +22,6 @@
         font-display: swap;
     }
 
-    html {
-        line-height: 1.5; /* 1 rhythm unit */
-        line-height: var(--base-line-rhythm);
-    }
-
     html, body {
         height: 100%;
     }
@@ -34,12 +30,15 @@
         font-family: 'Jost', sans-serif;
         font-weight: 300;
 
+        line-height: 1.25; /* 1 rhythm unit */
+        line-height: var(--base-line-rhythm);
+
         text-align: left;
 
         display: flex;
         flex-direction: column;
 
-        padding: 0;
+        padding: 0 1rem;
 
         color: #333;
     }
@@ -48,7 +47,7 @@
         max-width: 30rem;
         flex-grow: 1;
 
-        margin: 0 auto 5.06rem;
+        margin: 0 auto 3.375rem;
         padding: 2.25rem;
 
     }
@@ -76,10 +75,12 @@
 
     .sub-heading {
         font-size: 1.5rem;
+        font-size: calc(1.5rem * var(--base-font-size)); 
     }
 
     .lead {
         font-size: 1.25rem;
+        font-size: calc(1.25rem * var(--base-font-size));
         margin-bottom: 1.5rem;
         margin-bottom: calc(var(--base-line-rhythm) * 1rem);
     }
@@ -92,6 +93,7 @@
 
     .site-header h1 {
         font-size: 3.375rem;
+        font-size: calc(3.375rem * var(--base-font-size));
     }
 
     .site-header--defn {
@@ -99,6 +101,7 @@
 
         font-weight: 300;
         font-size: 1rem;
+         font-size: calc(1rem * var(--base-font-size));
         color: #666;
     }
 
@@ -148,6 +151,7 @@
     @media screen and (min-width: 576px) {
         :root {
             --base-line-rhythm: 1.375;
+            --base-font-size: 1.125;
         }
 
         .site-header--defn {

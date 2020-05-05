@@ -1,6 +1,6 @@
-<!--#if expr="%{HTTP_USER_AGENT} =~ /(MSIE|Trident)/" -->
+<!--#if expr="${HTTP_USER_AGENT} = /(MSIE|Trident)/" -->
 <footer class="footer fake-footer_clipped-top">
-<img class="img_clipped-top" src="common-content/footer-top.svg"/>
+	<img class="img_clipped-top" src="common-content/footer-top.svg"/>
 <!--#else -->
 <footer class="footer footer_clipped-top">
 <!--#endif -->

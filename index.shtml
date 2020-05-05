@@ -7,4 +7,7 @@
 
 <!--#include virtual="css/normalize-css.html" --> 
 <!--#include virtual="css/base-css.html" --> 
+<!--#if expr="${HTTP_USER_AGENT} = /(MSIE|Trident)/" -->
+<!--#include virtual="css/specific-ie.html" -->
+<!--#endif -->
 <!--#include virtual="common-content/body.shtml" -->
