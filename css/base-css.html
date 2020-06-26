@@ -1,5 +1,8 @@
    
 <style>
+    /* ===============
+    GLOBAL SETTINGS
+    =============== */
     :root {
         --base-line-rhythm: 1.25;
         --base-font-size: 1;
@@ -24,6 +27,7 @@
 
     html, body {
         height: 100%;
+        overflow: auto;
     }
 
     body {
@@ -38,7 +42,7 @@
         display: flex;
         flex-direction: column;
 
-        padding: 0 1rem;
+        padding: 0;
 
         color: #333;
     }
@@ -79,8 +83,8 @@
     }
 
     .lead {
-        font-size: 1.25rem;
-        font-size: calc(1.25rem * var(--base-font-size));
+        font-size: 1.125rem;
+        font-size: calc(1.125rem * var(--base-font-size));
         margin-bottom: 1.5rem;
         margin-bottom: calc(var(--base-line-rhythm) * 1rem);
     }
