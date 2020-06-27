@@ -4,7 +4,7 @@
 <meta name="description" content="">
 <meta name="keywords" content="">
 <title>Reduct Landing Page</title>
-
+<!--#set var="pathToMainContent" value="../content/main-content.html"-->
 <!--#include virtual="css/normalize-css.html" --> 
 <!--#include virtual="css/base-css.html" --> 
 <!--#if expr="${HTTP_USER_AGENT} = /(MSIE|Trident)/" -->

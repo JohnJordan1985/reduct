@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!--#set var="page-title" value="Test Article" -->
+	<title><!--#echo var="page-title" --></title>
+</head>
+<body>
+	<!--#include file="content/index.html" -->
+	<section>
+		<h2>Document Name: <!--#echo var="DOCUMENT_NAME" --></h2>
+	</section>
+	<section>
+		<h2>Last Modified: <!--#echo var="LAST_MODIFIED" --></h2>
+	</section>
+	<section>
+		Path is: <!--#echo var="DOCUMENT_URI"-->
+	</section>
+</body>
+</html>

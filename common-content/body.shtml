@@ -1,7 +1,7 @@
 </head>
 <body>
     <main>
-       <!--#include virtual="../content/home-page.html" -->  
+       <!--#include virtual="$pathToMainContent" -->  
     </main>
    <!--#include file="footer.shtml" --> 
 </body>
