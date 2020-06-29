@@ -1,26 +1,48 @@
 <style>
+	main {
+		text-align: center;
+	}
+
+	ul {
+		text-align: left;
+		max-width: 300px;
+		margin: 0 auto;
+	}
+	
 	.error-code-msg {
 		max-width: 100%;
+		margin-bottom: 0;
 	}
 
 	.error-code-msg header {
 		display: flex;
 		justify-content: center;
 
+		padding: 2.25rem;
+
 		background: url('images/brickwall-halftone.png') center/90%;
 	}
 
 	h1.error-code {
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
 		flex-basis: 100%;
-		max-width: 150px;
+		max-width: 175px;
+		max-height: 175px;
 		
 		margin: 2.25rem;
+		margin: calc(2.25rem * var(--base-line-rhythm));
+
 		font-size: 2.25rem;
+		font-size: calc(2.25rem * var(--base-font-size));
 
 		line-height: 1;
 		text-align: center;
 
-		padding: 1rem;
+		padding: 1rem 1.5rem;
 
 		background-color: #EF0606;
 		border: 0.5rem solid #FFF;
@@ -33,13 +55,26 @@
 		color: #FFF;
 	}
 
+	.margin-bottom-1-and-half {	
+		margin-bottom: 1.5rem;
+		margin-bottom: calc(1.5rem * var(--base-line-rhythm));
+	}
+
 	@media screen and (min-width: 556px) {
 		h1.error-code {
 			max-width: 275px;
+			max-height: 275px;
+
 			font-size: 3.375rem;
+			font-size: calc(3.375rem * var(--base-font-size));
+
+			padding: 2.25rem 1.5rem;
+			
+
 		}
 		.error-code-number {
 			font-size: 7.6rem;
+			font-size: calc(7.6rem * var(--base-font-size));
 		}
 	}
 </style>

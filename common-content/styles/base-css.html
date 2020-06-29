@@ -28,6 +28,7 @@
     html, body {
         height: 100%;
         overflow: auto;
+        box-sizing: border-box;
     }
 
     body {
@@ -49,9 +50,17 @@
 
     main {
         flex-grow: 1;
-        max-width: 100%;
+        max-width: 100%
         margin: 0 1rem 3.375rem;
-        padding: 2.25rem;
+        padding: 2.25rem 1rem;
+    }
+
+    main > * {
+        max-width: 30rem;
+        margin: 0 auto;
+
+        margin-bottom: 2.25rem;
+        margin-bottom: calc(2.25rem * var(--base-line-rhythm));
     }
 
     h1, h2, h3, h4, p {
@@ -91,6 +100,11 @@
         margin-bottom: calc(var(--base-line-rhythm) * 1rem);
     }
 
+    .site-header {
+        margin-bottom: 2.25rem;
+        margin-bottom: calc(var(--base-line-rhythm) * 2.25rem);
+    }
+
     .site-header--img {
         max-width: 7.59rem; /* Safari issue */
         margin-bottom: 1.5rem;
@@ -102,12 +116,13 @@
         font-size: calc(3.375rem * var(--base-font-size));
     }
 
-    .site-header--defn {
+    .site-header--defn,
+    .site-header--small-text {
         display: block;
 
         font-weight: 300;
         font-size: 1rem;
-         font-size: calc(1rem * var(--base-font-size));
+        font-size: calc(1rem * var(--base-font-size));
         color: #666;
     }
 
