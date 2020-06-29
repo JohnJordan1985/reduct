@@ -4,7 +4,7 @@
     GLOBAL SETTINGS
     =============== */
     :root {
-        --base-line-rhythm: 1.25;
+        --base-line-rhythm: 1.3125;
         --base-font-size: 1;
         --base-type-ratio: 1.5;
     }
@@ -44,19 +44,17 @@
 
         padding: 0;
 
-        color: #333;
+        color: #666;
     }
 
     main {
-        max-width: 30rem;
         flex-grow: 1;
-
-        margin: 0 auto 3.375rem;
+        max-width: 100%;
+        margin: 0 1rem 3.375rem;
         padding: 2.25rem;
-
     }
 
-    h1, p {
+    h1, h2, h3, h4, p {
         margin-top: 0;
         margin-bottom: 1.25rem;
         margin-bottom: calc(var(--base-line-rhythm) * 1rem);
@@ -70,6 +68,10 @@
 
     dd {
         margin-left: 0;
+    }
+
+    h1, h2, h3, h4, strong {
+        color: #000;
     }
 
     .bold {
@@ -109,7 +111,7 @@
         color: #666;
     }
 
-    .site-header::after {
+    .site-header.site-header-with-definition::after {
         display: block;
         content: '';
         width: 50px;
@@ -148,6 +150,7 @@
     .copy-right {
         width: 75%;
         margin-left: auto;
+        font-size: 0.667rem;
     }
 
     /* BS:4 576px, 768px, 992px and 1200px*/
