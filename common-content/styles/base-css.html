@@ -11,16 +11,16 @@
     /* Typographic scale based on rems, and the 'Perfect Fifth', 1, 1.5, 2.25, 3.375 see: https://type-scale.com/. 4 sizes per interval, i.e. 1, 1.125, 1.25, 1.375 */
     @font-face {
         font-family: 'Jost';
-        src: url('css/fonts/jost-300-light-webfont.woff2') format('woff2'),
-            url('css/fonts/jost-300-light-webfont.woff') format('woff');
+        src: url('/common-content/styles/fonts/jost-300-light-webfont.woff2') format('woff2'),
+            url('/common-content/styles/fonts/jost-300-light-webfont.woff') format('woff');
         font-weight: normal;
         font-display: swap;
     }
 
     @font-face {
         font-family: 'Jost';
-        src: url('css/fonts/jost-700-bold-webfont.woff2') format('woff2'),
-            url('css/fonts/jost-700-bold-webfont.woff') format('woff');
+        src: url('/common-content/styles/fonts/jost-700-bold-webfont.woff2') format('woff2'),
+            url('/common-content/styles/fonts/jost-700-bold-webfont.woff') format('woff');
         font-weight: bold;
         font-display: swap;
     }
@@ -50,17 +50,9 @@
 
     main {
         flex-grow: 1;
-        max-width: 100%
+        max-width: 100%;
         margin: 0 1rem 3.375rem;
-        padding: 2.25rem 1rem;
-    }
-
-    main > * {
-        max-width: 30rem;
-        margin: 0 auto;
-
-        margin-bottom: 2.25rem;
-        margin-bottom: calc(2.25rem * var(--base-line-rhythm));
+        padding: 2.25rem 0;
     }
 
     h1, h2, h3, h4, p {
@@ -88,6 +80,14 @@
         color: #000;
     }
 
+    .main-section {
+        max-width: 30rem;
+        margin: 0 auto;
+
+        margin-bottom: 2.25rem;
+        margin-bottom: calc(2.25rem * var(--base-line-rhythm));
+    }
+
     .sub-heading {
         font-size: 1.5rem;
         font-size: calc(1.5rem * var(--base-font-size)); 
@@ -111,7 +111,7 @@
         margin-bottom: calc(var(--base-line-rhythm) * 1rem);
     }
 
-    .site-header h1 {
+    .site-header_headline {
         font-size: 3.375rem;
         font-size: calc(3.375rem * var(--base-font-size));
     }
