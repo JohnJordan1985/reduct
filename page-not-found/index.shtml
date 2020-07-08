@@ -3,7 +3,7 @@
 <meta name="author" content="John Jordan">
 <meta name="description" content="">
 <meta name="keywords" content="">
-<title>Content Not Found (Status Code: 404)</title>
+<title>404: Page not found</title>
 <!--#include virtual="scripts/main.html" -->
 <!--#set var="pathToMainContent" value="../page-not-found/content/main-content.html" -->
 <!--#include virtual="../common-content/styles/normalize-css.html" --> 

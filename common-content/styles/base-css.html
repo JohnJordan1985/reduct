@@ -49,7 +49,11 @@
     }
 
     main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         flex-grow: 1;
+
         max-width: 100%;
         margin: 0 1rem 3.375rem;
         padding: 2.25rem 0;
@@ -57,8 +61,11 @@
 
     h1, h2, h3, h4, p {
         margin-top: 0;
-        margin-bottom: 1.25rem;
+        margin-bottom: 1rem;
         margin-bottom: calc(var(--base-line-rhythm) * 1rem);
+
+        font-size: 1.125rem;
+        font-size: calc(1.125rem * var(--base-font-size));
 
         word-spacing: 0.05rem;
     }
@@ -81,11 +88,13 @@
     }
 
     .main-section {
-        max-width: 30rem;
+        width: 100%;
+        max-width: 32rem;
         margin: 0 auto;
 
         margin-bottom: 2.25rem;
         margin-bottom: calc(2.25rem * var(--base-line-rhythm));
+
     }
 
     .sub-heading {
@@ -93,22 +102,15 @@
         font-size: calc(1.5rem * var(--base-font-size)); 
     }
 
-    .lead {
-        font-size: 1.125rem;
-        font-size: calc(1.125rem * var(--base-font-size));
-        margin-bottom: 1.5rem;
-        margin-bottom: calc(var(--base-line-rhythm) * 1rem);
-    }
-
     .site-header {
-        margin-bottom: 2.25rem;
-        margin-bottom: calc(var(--base-line-rhythm) * 2.25rem);
+        margin-bottom: 1.5rem;
+        margin-bottom: calc(var(--base-line-rhythm) * 1.5rem);
     }
 
     .site-header--img {
         max-width: 7.59rem; /* Safari issue */
         margin-bottom: 1.5rem;
-        margin-bottom: calc(var(--base-line-rhythm) * 1rem);
+        margin-bottom: calc(var(--base-line-rhythm) * 1.5rem);
     }
 
     .site-header_headline {
@@ -132,8 +134,8 @@
         width: 50px;
         height: 5px;
 
-        margin-bottom: 2.25rem;
-        margin-bottom: calc(var(--base-line-rhythm) * 1.5rem);
+        margin-bottom: 1rem;
+        margin-bottom: calc(var(--base-line-rhythm) * 1rem);
 
         background-color: #000;
     }
@@ -179,6 +181,18 @@
         .site-header--defn {
             display: inline;
             margin-top: 0;
+        }
+
+        .xs-mobile-only {
+            display: none;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        .site-header_headline {
+            font-size: 4.21875rem;
+            font-size: calc(4.21875rem * var(--base-font-size));
+            line-height: 1.125;
         }
     }
 
