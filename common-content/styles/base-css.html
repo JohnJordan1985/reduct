@@ -48,6 +48,28 @@
         color: #666;
     }
 
+    a {
+        transition: 0.25s all ease-in-out;
+    }
+
+    a:link {
+        color: #000;
+    }
+    a:visited {
+        color: #EF0606;
+    }
+    a:focus {
+        outline: 5px solid #EF0606;
+    }
+    a:hover {
+        background-color: #999;
+        color: #000;
+    }
+    a:active {
+        background-color: #EF0606;
+        color: #000;
+    }
+
     main {
         display: flex;
         flex-direction: column;
@@ -168,6 +190,10 @@
         width: 75%;
         margin-left: auto;
         font-size: 0.667rem;
+    }
+
+    a.footer-link:link {
+        color: #FFF;
     }
 
     /* BS:4 576px, 768px, 992px and 1200px*/
