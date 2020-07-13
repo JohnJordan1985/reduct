@@ -1,5 +1,6 @@
 </head>
 <body>
+	<!--#include file="nav.shtml" -->
     <main>
        <!--#include virtual="$pathToMainContent" -->  
     </main>
