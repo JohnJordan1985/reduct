@@ -25,3 +25,6 @@
 
 # Enable use of legacy syntax (Apache v2.3.13-) for if conditionals, which is what is enabled on remote server
 SSILegacyExprParser on
+
+# Return 404 error page
+ErrorDocument 404 /page-not-found/index.shtml
