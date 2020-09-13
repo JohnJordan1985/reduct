@@ -78,8 +78,8 @@
         flex-grow: 1;
 
         max-width: 100%;
-        margin: 0 1rem 5.0625rem;
-        padding: 5.0625rem 0 2.25rem;
+        margin: 0 0 5.0625rem;
+        padding: 5.0625rem 1rem 2.25rem;
     }
 
     h1, h2, h3, h4, p {
@@ -131,14 +131,12 @@
     }
 
     .page-banner_wrapper {
-        position: relative;
+        max-width: 1200px;
         margin: 0 -1rem;
-        width: 100vw;
     }
 
     .page-banner {
-        width: 100vw;
-        max-width: 1200px;
+        max-width: 100%;
         margin: 0 auto;
     }
 
@@ -262,6 +260,10 @@
             font-size: 4.21875rem;
             font-size: calc(4.21875rem * var(--base-font-size));
             line-height: 1.125;
+        }
+
+        .page-banner_wrapper {
+            margin: 0 auto;
         }
     }
 
