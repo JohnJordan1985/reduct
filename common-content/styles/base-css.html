@@ -74,11 +74,11 @@
     main {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         flex-grow: 1;
 
         max-width: 100%;
-        margin: 0 1rem 1rem;
+        margin: 0 1rem 5.0625rem;
         padding: 5.0625rem 0 2.25rem;
     }
 
@@ -105,6 +105,12 @@
         color: #000;
     }
 
+    img {
+        display: block;
+        width: auto;
+        max-width: 100%
+    }
+
     .bold {
         font-weight: bold;
         color: #000;
@@ -122,6 +128,18 @@
 
     .main-nav_content-img {
         max-width: 7.59rem; /* Safari issue */
+    }
+
+    .page-banner_wrapper {
+        position: relative;
+        margin: 0 -1rem;
+        width: 100vw;
+    }
+
+    .page-banner {
+        width: 100vw;
+        max-width: 1200px;
+        margin: 0 auto;
     }
 
     .main-section {
@@ -218,6 +236,10 @@
         :root {
             --base-line-rhythm: 1.375;
             --base-font-size: 1.125;
+        }
+
+        main {
+            margin: 1rem 0;
         }
 
         .site-header_defn {
