@@ -5,7 +5,7 @@
     =============== */
     :root {
         --base-line-rhythm: 1.3125;
-        --base-font-size: 1;
+        --base-font-size: 1.125;
         --base-type-ratio: 1.5;
     }
     /* Typographic scale based on rems, and the 'Perfect Fifth', 1, 1.5, 2.25, 3.375 see: https://type-scale.com/. 4 sizes per interval, i.e. 1, 1.125, 1.25, 1.375 */
@@ -43,7 +43,7 @@
         display: flex;
         flex-direction: column;
 
-        padding: 0;
+        padding: 3.375rem 0 0;
 
         color: #666;
     }
@@ -113,11 +113,19 @@
     }
 
     .main-nav {
+        position: fixed;
+        width: 100%;
+        top: 0;
+
         padding: 0.667rem 1rem;
+        background: #FFF;
         box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     }
 
     .main-nav_content {
+        display: flex;
+        align-items: center;
+
         max-width: 64rem;
         margin: 0 auto;
     }
