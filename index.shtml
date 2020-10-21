@@ -1,8 +1,8 @@
 <!--#include virtual="common-content/head.html" -->
 
 <meta name="author" content="John Jordan">
-<meta name="description" content="">
-<meta name="keywords" content="">
+<meta name="description" content="An introduction to the concept of reduction, the reverse process of abstraction, and the key to making sense of the scientific and mathemathical concepts you were taught in school.">
+<meta name="keywords" content="abstraction reduction learning school education science maths mathemathics">
 <title>Reduct Landing Page</title>
 <!--#set var="pathToMainContent" value="../content/main-content.html"-->
 <!--#include virtual="common-content/styles/normalize-css.html" --> 
