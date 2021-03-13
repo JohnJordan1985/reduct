@@ -5,10 +5,25 @@
     }
 
     .home-page_hero {
-        margin: 0 auto 3.375rem;
-        padding-top: 5.0625rem;
+        max-width: 56rem; 
+        margin: 0 auto 5.0625rem;
+        padding-top: 3.375rem;
         padding-bottom: 2.25rem;
         border-bottom: solid 5px #CCC;
+    }
+
+    .hero-section_text {
+        padding: 0 1.5rem 0 2.25rem;
+    }
+
+    .hero_linebreak {
+        display: none;
+    }
+
+    @media screen and (min-width: 768px) {
+      .hero_linebreak {
+        display: block;
+      }   
     }
 
 	@media screen and (min-width: 1200px) {
@@ -21,6 +36,10 @@
 
             max-width: 75rem;
             margin-bottom: 5.0625rem;
+        }
+
+        .hero_linebreak {
+            display: none;
         }
 
         .hero-section_text {
