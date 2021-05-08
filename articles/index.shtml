@@ -5,9 +5,9 @@
 <meta name="keywords" content="">
 <title>Reduct Articles</title>
 <!--#set var="pathToMainContent" value="../articles/content/main-content.html"-->
-<!--#include virtual="../css/normalize-css.html" --> 
-<!--#include virtual="../css/base-css.html" --> 
+<!--#include virtual="../common-content/styles/normalize-css.html" --> 
+<!--#include virtual="../common-content/styles/base-css.html" --> 
 <!--#if expr="${HTTP_USER_AGENT} = /(MSIE|Trident)/" -->
-<!--#include virtual="../css/specific-ie.html" -->
+<!--#include virtual="../common-content/styles/specific-ie.html" -->
 <!--#endif -->
 <!--#include virtual="../common-content/body.shtml" -->
