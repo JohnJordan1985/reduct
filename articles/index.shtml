@@ -7,6 +7,7 @@
 <!--#set var="pathToMainContent" value="../articles/content/main-content.html"-->
 <!--#include virtual="../common-content/styles/normalize-css.html" --> 
 <!--#include virtual="../common-content/styles/base-css.html" --> 
+<!--#include virtual="content/styles/page-styles.html" --> 
 <!--#if expr="${HTTP_USER_AGENT} = /(MSIE|Trident)/" -->
 <!--#include virtual="../common-content/styles/specific-ie.html" -->
 <!--#endif -->
