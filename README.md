@@ -12,6 +12,14 @@ To include scripts on a page, do the following:<ol>
 <li style="margin-bottom: 0.5rem">in the actual script file, place the script to be excecuted, as per usual.</li>
 </ol>
 
+## Adding a new page
+Copy the pre-existing "new" page from the "template" directory, in the root of the server
+- Set the value of the `pathToMainContent` variable to the relative path to the "content" folder that contains content specific to the page, when taking the starting point to be the `body.shtml` file contained within the `common-content`, which sits at the server root.
+
+- Set all the values of the paths to the `common-content` folder, which sits at the server root. 
+
+
+- Add page content to the `main-content.html` file, and page styles to the `page-styles.html` file
 
 ## Notes
 Markdown preview can be triggered in Sublime 3 using `alt + m`, following advice here: https://packagecontrol.io/packages/MarkdownLivePreview.

@@ -53,7 +53,7 @@
 
     a {
         position: relative;
-        transition: 0.25s opacity ease-in-out;
+        transition: 100ms outline ease-in;
         color: #5574BA;
     }
 
@@ -68,6 +68,9 @@
         height: 100%;
 
         opacity: 0;
+        will-change: opacity;
+        transition: opacity 100ms ease-in;
+
         background-color: #999;
     }
 
