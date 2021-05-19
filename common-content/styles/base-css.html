@@ -51,6 +51,27 @@
         color: #666;
     }
 
+     main {
+        box-sizing: border-box;
+        flex-grow: 1;
+        max-width: 75rem;
+        margin: 0 auto 5.0625rem;
+        padding: 5.0625rem 1rem 2.25rem;
+    }
+
+
+    header, section {
+        max-width: 75rem;
+        margin: 0 auto;
+        margin-bottom: 2.25rem;
+        margin-bottom: calc(2.25rem * var(--base-line-rhythm));
+    }
+
+    header {
+        max-width: 37.5rem;
+        border-bottom: 2px solid #DDD;
+    }
+
     a {
         position: relative;
         transition: 100ms outline ease-in;
@@ -93,22 +114,6 @@
     a:active {
         background-color: #EF0606;
         color: #000;
-    }
-
-    main {
-        box-sizing: border-box;
-        flex-grow: 1;
-        max-width: 75rem;
-        margin: 0 auto 5.0625rem;
-        padding: 5.0625rem 1rem 2.25rem;
-    }
-
-
-    section {
-        max-width: 75rem;
-        margin: 0 auto;
-        margin-bottom: 2.25rem;
-        margin-bottom: calc(2.25rem * var(--base-line-rhythm));
     }
 
     h1, h2, h3, h4, p {
