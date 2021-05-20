@@ -56,11 +56,15 @@
         flex-grow: 1;
         max-width: 75rem;
         margin: 0 auto 5.0625rem;
+        word-break: break-word;
         padding: 5.0625rem 1rem 2.25rem;
     }
 
 
     header, section {
+        font-size: 1rem;
+        font-size: calc(1rem * var(--base-font-size));
+        
         max-width: 75rem;
         margin: 0 auto;
         margin-bottom: 2.25rem;
@@ -69,7 +73,6 @@
 
     header {
         max-width: 37.5rem;
-        border-bottom: 2px solid #DDD;
     }
 
     a {
@@ -152,7 +155,7 @@
     }
 
     hr {
-        height: 5px;
+        height: 3px;
         margin-bottom: 2.25rem;
         margin-bottom: calc(2.25rem * var(--base-line-rhythm));
         border: none;
@@ -170,9 +173,11 @@
 
     .main-nav {
         box-sizing: border-box;
+        
         position: fixed;
         width: 100%;
         top: 0;
+        z-index: 5;
 
         padding: 0.667rem 1rem;
         background: #FFF;
@@ -229,6 +234,7 @@
     }
 
     .site-header {
+        max-width: 100%;
         margin-bottom: 1.5rem;
         margin-bottom: calc(var(--base-line-rhythm) * 1.5rem);
     }
