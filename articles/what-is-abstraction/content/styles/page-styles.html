@@ -1,4 +1,11 @@
 <style>
+	div {
+		margin-bottom: 1rem;
+		margin-bottom: calc(1rem * var(--base-line-rhythm));
+	}
+	p {
+		max-width: 37.5rem;
+	}
 	ul {
 		list-style-type: none;
 	}
@@ -15,5 +22,31 @@
 		top: 0.667rem;
 		left: -1rem;
 		background: #666;
+	}
+	.section_flex {
+		position: relative;
+		margin-bottom: 2.7rem;
+        margin-bottom: calc(var(--base-line-rhythm) * 2.7rem);
+
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: space-between;
+	}
+
+	.section_flex::after {
+		content: '';
+		display: block;
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 1rem;
+		height: 0.446rem;
+		background: #666;
+	}
+	@media  screen and (min-width: 1200px) {
+		.section_flex {
+			display: flex;
+			flex-direction: row;
+		}
 	}
 </style>
