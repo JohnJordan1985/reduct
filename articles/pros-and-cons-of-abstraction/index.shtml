@@ -1,0 +1,13 @@
+<!--#include virtual="../../common-content/head.html" -->
+<meta name="author" content="John Jordan">
+<meta name="description" content="An introduction to 'abstraction' as an act-of-mind">
+<meta name="keywords" content="abstraction">
+<title>What is Abstraction? Selective Mental Focus</title>
+<!--#set var="pathToMainContent" value="/articles/what-is-abstraction/content/main-content.html"-->
+<!--#include virtual="../../common-content/styles/normalize-css.html" --> 
+<!--#include virtual="../../common-content/styles/base-css.html" --> 
+<!--#include virtual="content/styles/page-styles.html" --> 
+<!--#if expr="${HTTP_USER_AGENT} = /(MSIE|Trident)/" -->
+<!--#include virtual="../../common-content/styles/specific-ie.html" -->
+<!--#endif -->
+<!--#include virtual="../../common-content/body.shtml" -->
