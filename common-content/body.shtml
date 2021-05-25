@@ -1,9 +1,9 @@
 </head>
 <body>
-	<!--#include file="nav.html" -->
+	<!--#include virtual="nav.html" -->
     <main>
        <!--#include virtual="$pathToMainContent" -->  
     </main>
-   <!--#include file="footer.shtml" --> 
+   <!--#include virtual="footer.shtml" -->
 </body>
 </html>
