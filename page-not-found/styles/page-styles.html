@@ -28,7 +28,7 @@
 
 		background-color: #DDD;
 
-		/*background: url('/common-content/images/brickwall-halftone.png') center/90%;*/
+		background: url('/page-not-found/content/brickwall-halftone-slice.png') repeat;
 	}
 
 	.error-code_circle {
@@ -75,16 +75,26 @@
 		margin-top:1rem;
 		margin-top: calc(1rem * var(--base-line-rhythm));
 
-		text-decoration: none;
+		box-sizing: border-box;
+		padding: 1rem;
+		background-color: #DDD;
 		border-bottom: 3px solid #000;
+
+		text-decoration: none;
+		color: #000;
+
 	}
 
 	.homepage-link:visited {
+		color: #000;
 		border-bottom: 3px solid #999;
 	}
 
 	.homepage-link::after {
 		content: ' →';
+		position: static;
+		opacity: 1;
+		background-color: transparent;
 	}
 
 	@media screen and (min-width: 556px) {

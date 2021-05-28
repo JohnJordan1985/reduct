@@ -25,6 +25,7 @@ Copy the pre-existing "new" page from the "template" directory, in the root of t
 Markdown preview can be triggered in Sublime 3 using `alt + m`, following advice here: https://packagecontrol.io/packages/MarkdownLivePreview.
 
 Note on file paths
+Use the <code>virtual</code> attribute rather than the <code>file</code> on your SSI directives, since the remote server does not seem to respect the <code>file</code> path.
 <blockquote>The include element can determine what file to include with either the file attribute, or the virtual attribute. The file attribute is a file path, relative to the current directory. That means that it cannot be an absolute file path (starting with /), nor can it contain ../ as part of that path. The virtual attribute is probably more useful, and should specify a URL relative to the document being served. It can start with a /, but must be on the same server as the file being served. 
 From: <a href="https://stackoverflow.com/questions/33491712/ssi-include-virtual-relative-path-not-working#34486412">StackOverflow</a>
 </blockquote>

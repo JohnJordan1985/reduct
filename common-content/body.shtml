@@ -5,5 +5,6 @@
        <!--#include virtual="$pathToMainContent" -->  
     </main>
    <!--#include virtual="footer.shtml" -->
+   <!--#include virtual="scripts/footer-scripts.html" -->
 </body>
 </html>
