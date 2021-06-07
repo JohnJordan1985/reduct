@@ -1,5 +1,5 @@
    
-<style>
+<style id="baseSiteStyles">
     /* ===============
     GLOBAL SETTINGS
     =============== */
@@ -9,7 +9,7 @@
         --base-font-size: 1.125;
         --base-type-ratio: 1.5;
     }
-    /* Typographic scale based on rems, and the 'Perfect Fifth', 1, 1.5, 2.25, 2.7, 3.375 see: https://type-scale.com/. 4 sizes per interval, i.e. 1, 1.125, 1.25, 1.375 */
+    /* Typographic scale based on rems, and the 'Perfect Fifth', 1, 1.5, 2.25, 2.7, 3.375 [3.7125], 5.0625 see: https://type-scale.com/. 4 sizes per interval, i.e. 1, 1.125, 1.25, 1.375 */
     @font-face {
         font-family: 'Jost';
         src: url('/common-content/styles/fonts/jost-400-book-webfont.woff2') format('woff2'),
@@ -24,6 +24,10 @@
             url('/common-content/styles/fonts/jost-700-bold-webfont.woff') format('woff');
         font-weight: bold;
         font-display: swap;
+    }
+
+    html {
+        padding-top: 4rem;
     }
 
     html, body {
@@ -46,7 +50,7 @@
 
         overflow-x: hidden;
 
-        padding: 3.375rem 0 0;
+        padding: 0;
 
         color: #666;
     }
@@ -117,25 +121,6 @@
         color: #000;
     }
 
-    h1, h2, h3, h4, p {
-        margin-top: 0;
-        margin-bottom: 1rem;
-        margin-bottom: calc(var(--base-line-rhythm) * 1rem);
-
-        font-size: 1.125rem;
-        font-size: calc(1.125rem * var(--base-font-size));
-
-        word-spacing: 0.05rem;
-    }
-
-    dd {
-        margin-left: 0;
-    }
-
-    h1, h2, h3, h4, strong {
-        color: #000;
-    }
-
     h1, h2  {
         font-size: 2.7rem;
         font-size: calc(2.7rem * var(--base-font-size));
@@ -153,6 +138,28 @@
         font-size: calc(1.5rem * var(--base-font-size));   
     }
 
+    h4, p, img, hr {
+        font-size: 1.125rem;
+        font-size: calc(1.125rem * var(--base-font-size));
+        word-spacing: 0.05rem;
+        
+        margin-top: 0;
+    }
+
+    h3, h4, img, hr {
+        margin-top: 0;
+        margin-bottom: 2.25rem;
+        margin-bottom: calc(var(--base-line-rhythm) * 2.25rem);
+    }
+
+    dd {
+        margin-left: 0;
+    }
+
+    h1, h2, h3, h4, strong {
+        color: #000;
+    }
+
     img {
         display: block;
         height: auto;
@@ -160,12 +167,13 @@
         max-width: 100%;
     }
 
+    img, hr {
+        background: #CCC;
+    }
+
     hr {
         height: 3px;
-        margin-bottom: 2.25rem;
-        margin-bottom: calc(2.25rem * var(--base-line-rhythm));
         border: none;
-        background-color: #CCC;
     }
 
     nav {
@@ -202,6 +210,8 @@
     .main-nav_content-img {
         width: 125px;
         max-width: 7.59rem; /* Safari issue */
+        margin-bottom: 0;
+        background: none;
     }
 
     a.mainNav_link {
@@ -240,48 +250,12 @@
         font-size: calc(1.5rem * var(--base-font-size)); 
     }
 
-    .site-header {
-        max-width: 100%;
-        margin-bottom: 1.5rem;
-        margin-bottom: calc(var(--base-line-rhythm) * 1.5rem);
-    }
-
-    .site-header_headline {
-        font-size: 3.375rem;
-        font-size: calc(3.375rem * var(--base-font-size));
-        line-height: 1;
-    }
-
-    .site-header_defn,
-    .site-header_small-text {
-        display: block;
-
-        margin-top: 1rem;
-
-        font-weight: 300;
-        font-size: 1rem;
-        font-size: calc(1rem * var(--base-font-size));
-        color: #666;
-    }
-
-    .site-header.site-header-with-definition::after {
-        display: block;
-        content: '';
-        width: 50px;
-        height: 5px;
-
-        margin-bottom: 1rem;
-        margin-bottom: calc(var(--base-line-rhythm) * 1rem);
-
-        background-color: #000;
-    }
-
     .main_section-header {
         text-align: center;
     }
 
-    .section_header-image {
-        margin-bottom: 2.25rem;
+    .section_header-image,
+    .subSec_img {
         background-color: #EFEBDE;
     }
 
@@ -331,6 +305,38 @@
         color: #5574BA;
     }
 
+    .link_cta {
+        display: inline-block;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: normal;
+
+        margin-top:2.25rem;
+        margin-top: calc(2.25rem * var(--base-line-rhythm));
+
+        box-sizing: border-box;
+        padding: 1rem;
+        background-color: #DDD;
+        border-bottom: 3px solid #000;
+
+        text-decoration: none;
+        color: #000;
+
+    }
+
+    .link_cta:visited {
+        color: #000;
+        border-bottom: 3px solid #999;
+    }
+
+    .link_cta::after {
+        content: ' →';
+        position: static;
+        opacity: 1;
+        background-color: transparent;
+    }
+
+
     /* BS:4 576px, 768px, 992px and 1200px*/
 
     @media screen and (min-width: 576px) {
@@ -343,30 +349,12 @@
             margin: 1rem auto 0;
         }
 
-        .site-header_defn {
-            display: inline;
-            margin-top: 0;
-        }
-
-        .xs-mobile-only {
-            display: none;
-        }
-
-        .site-header_defn {
-            margin-top: 0;
-        }
     }
 
     @media screen and (min-width: 1200px) {
 
        main, section {
             max-width: 64rem;
-        }
-
-        .site-header_headline {
-            font-size: 4.21875rem;
-            font-size: calc(4.21875rem * var(--base-font-size));
-            line-height: 1.125;
         }
 
         .page-banner_wrapper {
