@@ -3,7 +3,7 @@
     /* ===============
     GLOBAL SETTINGS
     =============== */
-    /* red: #EF0606, black: , yellow: EFEBDE; blue: , grey: #CCC; need a purple*/
+    /* red: #EF0606, black: , yellow: #EFEBDE; blue: , grey: #CCC; need a purple*/
     :root {
         --base-line-rhythm: 1.3125;
         --base-font-size: 1.125;
@@ -165,11 +165,12 @@
     img {
         display: block;
         height: auto;
-        width: 100%;
+        width: auto;
         max-width: 100%;
+        background: #EFEBDE
     }
 
-    img, hr {
+    hr {
         background: #CCC;
     }
 
@@ -269,7 +270,8 @@
     }
 
     .footer {
-        padding: 2.25rem 1rem;
+        box-sizing: border-box;
+        padding: 2.75rem 1rem;
         background-color: #000;
         color: #FFF;
         text-align: right;
@@ -286,6 +288,19 @@
         padding-top: 0;
     }
 
+    .social_link {
+        display: inline-block;
+        padding: 0.667rem 1rem;
+        margin: calc(var(--base-line-rhythm) * 1rem) 0;
+    }
+
+    .social_icon {
+        display: inline-block;
+        margin: 0;
+        max-width: 4rem;
+        background: #000000;
+    }
+
     .img_clipped-top {
         position: relative;
         top: -1rem;
@@ -294,8 +309,6 @@
     .copy-right {
         width: 75%;
         margin-left: auto;
-        margin-top: 3.375rem;
-
         font-size: 0.7708rem;
     }
 

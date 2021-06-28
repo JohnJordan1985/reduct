@@ -1,9 +1,3 @@
-<footer class="footer footer_clipped-top">
-    <div class="copy-right">
-        &copy; Copyright of <a href="https://johnjordan.dev" rel="author" class="footer-link">John Jordan</a>.
-        <br/> 
-        All Rights Reserved. 
-        <br/>
-        2018 &ndash; <span id="copy-right-year"><!--#config timefmt="%Y" --> <!--#echo var="DATE_LOCAL" --></span>.
+<!--#include virtual="footer-content.html" --><span id="copy-right-year"><!--#config timefmt="%Y" --> <!--#echo var="DATE_LOCAL" --></span>.
     </div>
 </footer>
